@@ -198,7 +198,7 @@ Resizable.propTypes = {
 
   // Initial w/h
   width: _react.PropTypes.number.isRequired,
-  height: _react.PropTypes.number.isRequired,
+  // height: PropTypes.number.isRequired, NOT REQUIRED 4/18
 
   //
   // Optional props

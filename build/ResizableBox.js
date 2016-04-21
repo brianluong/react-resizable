@@ -95,6 +95,6 @@ ResizableBox.propTypes = {
   width: _react.PropTypes.number
 };
 ResizableBox.defaultProps = {
-  handleSize: [20, 20]
+  handleSize: [10, 10]
 };
 exports.default = ResizableBox;

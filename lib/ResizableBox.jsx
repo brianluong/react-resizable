@@ -14,7 +14,7 @@ export default class ResizableBox extends React.Component {
   };
 
   static defaultProps = {
-    handleSize: [20,20]
+    handleSize: [10,10]
   };
 
   state: State = {
@@ -30,6 +30,10 @@ export default class ResizableBox extends React.Component {
     });
   };
   onResize: (event: Event, data: ResizeData) => void;
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({width: nextProps.width});
+  }
 
   render(): React.Element {
     // Basic wrapper around a Resizable instance.
