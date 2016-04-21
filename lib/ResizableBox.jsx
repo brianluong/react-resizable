@@ -41,6 +41,9 @@ export default class ResizableBox extends React.Component {
     // with a new width and height.
     let {handleSize, onResizeStart, onResizeStop, draggableOpts,
          minConstraints, maxConstraints, lockAspectRatio, width, height, ...props} = this.props;
+    if (this.state.width != this.props.width) {
+      this.setState({width: this.props.width});
+    }
     return (
       <Resizable
         handleSize={handleSize}

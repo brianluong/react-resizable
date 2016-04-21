@@ -73,6 +73,9 @@ var ResizableBox = function (_React$Component) {
 
     var props = _objectWithoutProperties(_props, ['handleSize', 'onResizeStart', 'onResizeStop', 'draggableOpts', 'minConstraints', 'maxConstraints', 'lockAspectRatio', 'width', 'height']);
 
+    if (this.state.width != this.props.width) {
+      this.setState({ width: this.props.width });
+    }
     return _react2.default.createElement(
       _Resizable2.default,
       {
