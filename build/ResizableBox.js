@@ -53,7 +53,6 @@ var ResizableBox = function (_React$Component) {
   }
 
   ResizableBox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
     this.setState({ width: nextProps.width });
   };
 
