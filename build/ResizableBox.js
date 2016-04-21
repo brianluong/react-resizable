@@ -52,6 +52,11 @@ var ResizableBox = function (_React$Component) {
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
+  ResizableBox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+    console.log(nextProps);
+    this.setState({ width: nextProps.width });
+  };
+
   ResizableBox.prototype.render = function render() {
     // Basic wrapper around a Resizable instance.
     // If you use Resizable directly, you are responsible for updating the child component
