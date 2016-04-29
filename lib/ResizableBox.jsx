@@ -32,7 +32,7 @@ export default class ResizableBox extends React.Component {
   onResize: (event: Event, data: ResizeData) => void;
 
   componentWillReceiveProps(nextProps) {
-    this.setState({width: nextProps.width});
+    this.setState({ width: nextProps.width, height: nextProps.height });
   }
 
   render(): React.Element {
