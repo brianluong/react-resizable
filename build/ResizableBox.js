@@ -72,10 +72,11 @@ var ResizableBox = function (_React$Component) {
     var height = _props.height;
 
     var props = _objectWithoutProperties(_props, ['handleSize', 'onResizeStart', 'onResizeStop', 'draggableOpts', 'minConstraints', 'maxConstraints', 'lockAspectRatio', 'width', 'height']);
+    // if (this.state.width != this.props.width || this.state.height != this.props.height) {
+    //   this.setState({width: this.props.width, height: this.props.height});
+    // }
 
-    if (this.state.width != this.props.width || this.state.height != this.props.height) {
-      this.setState({ width: this.props.width, height: this.props.height });
-    }
+
     return _react2.default.createElement(
       _Resizable2.default,
       {
